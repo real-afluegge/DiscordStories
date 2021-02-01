@@ -42,8 +42,8 @@ async def msg_task():
             msg_id = messages[-1].id
             msg = await cur_id.fetch_message(msg_id)
             await msg.delete()
-        # waits 5 minutes before running again to delete the top message from the channel
-        await asyncio.sleep(300)
+        # waits 12 hours before running again to delete the top message from the channel
+        await asyncio.sleep(43200)
 
 
 @bot.command()
